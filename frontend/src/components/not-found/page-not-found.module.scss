@@ -1,0 +1,54 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafbfc;
+  color: #24292e;
+
+  h1 {
+    font-size: 8rem;
+    font-weight: 600;
+    margin: 0;
+    color: #24292e;
+  }
+}
+
+.not-found-content {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    color: #586069;
+  }
+}
+
+.emoji {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2ea44f;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #2c974b;
+    text-decoration: none;
+  }
+}
