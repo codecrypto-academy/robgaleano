@@ -1,6 +1,12 @@
+import { Badge } from "@/components/ui/badge";
+import { Context } from "@/middleware/app-context";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const { appState } = useContext(Context);
+  const account = appState.account;
+
   return (
     <header className="bg-gray-800 text-white">
       <nav className="container mx-auto px-4">
@@ -58,6 +64,7 @@ const Header = () => {
               Transfer
             </NavLink>
           </div>
+          {account && <Badge variant="secondary">{account}</Badge>}
 
           {/* Mobile menu button */}
           <button
@@ -135,6 +142,7 @@ const Header = () => {
               Transfer
             </NavLink>
           </div>
+          {account && <Badge variant="secondary">{account}</Badge>}
         </div>
       </nav>
     </header>
