@@ -34,9 +34,6 @@ cache/
 artifacts/
 typechain-types/
 
-# Ethereum data directory
-eth-node/
-
 # Coverage directory
 coverage/
 coverage.json
