@@ -62,10 +62,9 @@ npm start
 
 ## API Endpoints
 
-- `POST /api/request-tokens`: Request tokens with email verification
-- `GET /api/verify/:token`: Verify email and trigger token distribution
-- `GET /api/status/:requestId`: Check transaction status
-- `GET /api/admin/stats`: Admin-only statistics endpoint
+- `GET /api/balance/:address`: Obtain balance from a specific account using Metamask get_Balance
+- `GET /api/balanceEthers/:address`: Obtain balance from a specific account using Ethers.js
+- `GET /api/faucet/:address/:amount`: Top-up a reduced amount of balance from the node
 
 ## License
 
