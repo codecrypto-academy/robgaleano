@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
 import { useContext, useEffect } from "react";
+import { Context } from "@/middleware/app-context";
+import { Toaster } from "@/components/ui/sonner";
 
 import Header from "./header/header";
 import styles from "./dashboard.module.scss";
-import { Context } from "@/middleware/app-context";
 
 const Dashboard = () => {
   const { setAppState } = useContext(Context);
@@ -17,6 +18,7 @@ const Dashboard = () => {
       <Header />
       <main className={styles.main}>
         <Outlet />
+        <Toaster position="top-right" richColors />
       </main>
       <footer className={styles.footer}>{/* Your footer content */}</footer>
     </div>

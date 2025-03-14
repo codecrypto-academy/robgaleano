@@ -55,7 +55,6 @@ app.get("/api/balanceEthers/:address", async (req: Request, res: Response) => {
 app.get("/api/faucet/:address/:amount", async (req: Request, res: Response) => {
   const { address, amount } = req.params;
   const provider = new ethers.JsonRpcProvider(nodeUrl);
-  const nodeKeystorePath = keystorePath;
   const nodeJsonStr = fs.readFileSync(keystorePath, "utf-8");
   const wallet = await ethers.Wallet.fromEncryptedJson(nodeJsonStr, keystorePwd);
   const connectedWallet = wallet.connect(provider);
