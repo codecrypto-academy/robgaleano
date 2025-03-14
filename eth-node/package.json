@@ -1,0 +1,9 @@
+{
+  "name": "eth-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "node-start": "bash node-launch.bash"
+  }
+}
