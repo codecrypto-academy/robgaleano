@@ -1,0 +1,1 @@
+docker run -e "ACCEPT_EULA=Y" -e 'MSSQL_SA_PASSWORD=r00t.R00T' -p 1433:1433 --name sqlserver-db-container -d mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04

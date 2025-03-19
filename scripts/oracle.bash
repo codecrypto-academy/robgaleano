@@ -1,0 +1,1 @@
+docker run -d --name oracle-db-container -e ORACLE_PWD=root123456 -p 1521:1521 container-registry.oracle.com/database/express:21.3.0-xe

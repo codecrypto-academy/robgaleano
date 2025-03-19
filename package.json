@@ -1,0 +1,32 @@
+{
+  "name": "web2.5-sql",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start:mysql": "npx nodemon --exec node --loader ts-node/esm ./connections/mysql.ts",
+    "start:postgres": "npx nodemon --exec node --loader ts-node/esm ./connections/postgres.ts",
+    "start:sqlserver": "npx nodemon --exec node --loader ts-node/esm ./connections/sqlserver.ts",
+    "start:oracle": "npx nodemon --exec node --loader ts-node/esm ./connections/oracle.ts",
+    "docker:run-mysql": "bash ./scripts/mysql.bash",
+    "docker:run-pg": "bash ./scripts/postgres.bash",
+    "docker:run-sqlserver": "bash ./scripts/sqlserver.bash",
+    "docker:run-oracle": "bash ./scripts/oracle.bash"
+  },
+  "dependencies": {
+    "mssql": "^11.0.1",
+    "mysql2": "^3.2.0",
+    "oracledb": "^6.8.0",
+    "pg": "^8.14.0"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.7",
+    "@types/mysql": "^2.15.26",
+    "@types/node": "^22.13.10",
+    "@types/oracledb": "^6.5.3",
+    "@types/pg": "^8.11.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
