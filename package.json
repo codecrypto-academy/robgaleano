@@ -1,0 +1,11 @@
+{
+  "name": "web2.5-besu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "create:network": "podman network create besu-nodes",
+    "create:node": "besu --data-path=node1 public-key export-address --to=node1/address",
+    "start:node": "sh ./start-node.sh"
+  }
+}
